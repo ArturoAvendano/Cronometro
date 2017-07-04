@@ -24,10 +24,8 @@ void setup() {
   dht.begin(); ///inicia el sensor de temperatura y humedad
   reloj.begin(57600); ///inicia la comunicación al arduino UNO
   Serial.begin(9600);
-  pinMode(boton, INPUT_PULLUP);
   pinMode(sensorir, INPUT_PULLUP);
   pinMode(selector, INPUT_PULLUP);
-  pinMode(buzzpin, OUTPUT);
   rtc.writeProtect(false);
   rtc.halt(false);
   /*rtc.setDOW(WEDNESDAY);  // Configurar dia de la semana: MARTES.
